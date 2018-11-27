@@ -88,7 +88,9 @@ class CheatCode extends React.Component{
                 </div>
 
                 <div className = 'main'>
-                
+                <h2> Soy un alumno de la clase de Sistemas y tecnologias Web</h2>
+                <h2> En es portafolio presento algunas de las cosas que aprendi durante el semestre</h2>
+                <h2> Como mucho de los otros portafolios vistos, espero que este sea el primero de muchos</h2>
                 </div>
 
                 <div className='extra'>
