@@ -1,0 +1,109 @@
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    top: 100px;
+}
+
+.portafolio {
+    display: grid;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(4, auto);
+
+    color: #E8EDDF;
+}
+
+.titulo{
+
+    text-align: center;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    color: #F5CB5C;
+    font-family: 'Cardo', serif;
+    font-size: 80px;
+    font-style: italic;
+
+    margin-bottom: 10px;
+}
+
+.nombre{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.extra{
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        margin-left: 65%;
+    
+}
+.text{
+    animation: infinite typing-text 2s steps(27),blink 0.5s infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+
+    font-family: monospace;
+    color: #505450;
+    
+}
+
+@keyframes typing-text{
+    from {
+        width: 0;
+    }
+    to{
+        width: 27ch;
+    }
+}
+
+.hiddentext{
+    visibility: hidden;
+}
+
+body {
+    background: #242423;
+    margin: 20px;
+    font-family: monospace;
+
+  }
+
+  .card-container {
+    cursor: pointer;
+    height: 150px;
+    perspective: 600;
+    position: relative;
+    width: 150px;
+  }
+  .card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+  }
+
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  .card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+  }
+  .card .back {
+    background: #E8EDDF;
+    color: #242423;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
